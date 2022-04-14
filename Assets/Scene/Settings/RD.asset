@@ -16,6 +16,21 @@ MonoBehaviour:
   _settings:
     renderTag: CustomPostprocessRender
     passEvent: 550
+--- !u!114 &-5292688317154086166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c27d3dd7484e834db13678cf3fc1e4d, type: 3}
+  m_Name: GaussianblurRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passEvent: 550
+  blurStep: 8
 --- !u!114 &-4941773960741151729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edce59f62e43f148a6da550482d7fdc, type: 3}
   m_Name: TwoPassRenderFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   passEvent: 550
 --- !u!114 &-2175464679158929316
 MonoBehaviour:
@@ -99,7 +114,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: -2175464679158929316}
   - {fileID: -4941773960741151729}
-  m_RendererFeatureMap: 5ca852816632cfe10f9cbfedc34a6bbb
+  - {fileID: -5292688317154086166}
+  m_RendererFeatureMap: 5ca852816632cfe10f9cbfedc34a6bbbeab22b7504988cb6
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 0}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
