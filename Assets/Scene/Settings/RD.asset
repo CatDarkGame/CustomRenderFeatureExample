@@ -16,6 +16,20 @@ MonoBehaviour:
   _settings:
     renderTag: CustomPostprocessRender
     passEvent: 550
+--- !u!114 &-4941773960741151729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edce59f62e43f148a6da550482d7fdc, type: 3}
+  m_Name: TwoPassRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passEvent: 550
 --- !u!114 &-2175464679158929316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69622bc57f5bd5944b45a65f0aa0bfc4, type: 3}
   m_Name: SimpleRenderFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   passEvent: 550
 --- !u!114 &-1842696329855346862
 MonoBehaviour:
@@ -84,9 +98,10 @@ MonoBehaviour:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
   m_RendererFeatures:
   - {fileID: -2175464679158929316}
-  m_RendererFeatureMap: 5ca852816632cfe1
+  - {fileID: -4941773960741151729}
+  m_RendererFeatureMap: 5ca852816632cfe10f9cbfedc34a6bbb
   m_UseNativeRenderPass: 0
-  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  postProcessData: {fileID: 0}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
     blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
